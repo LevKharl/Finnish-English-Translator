@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Text Translator</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+<div class="container">
+
+    <button id="theme-toggle">Light/Dark Theme</button>
+    <h1>Text Translator</h1>
+    <h2>From English to Finnish</h2>
+
+    <form id="translationForm" action="/translate" method="post">
+        <label> Enter Text: </label>
+
+        <textarea id="text-to-translate" name="text_to_translate" rows="4" required></textarea>
+
+        <div class="button-loader-container">
+            <input type="submit" value="Translate">
+            <div id="spinner" class="loader" style="visibility:hidden;"></div>
+        </div>
+    </form>
+
+    <div id="result">
+        <h3>Translated Text:</h3>
+
+        <div id="output">
+            {% if translated_text %}
+            {{ translated_text }}
+            {% endif %}
+        </div>
+    </div>
+
+    <div id="recentTranslations">
+        <h3> Recent Translations:</h3>
+        <ul id="translationList"></ul>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
