@@ -1,4 +1,4 @@
-# AI-development-project-coding-assignment
+# Finnish-English-Translator
 coding assignment for the AI development project
 
 
