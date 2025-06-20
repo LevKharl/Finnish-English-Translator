@@ -1,17 +1,30 @@
-# Finnish-English-Translator
-coding assignment for the AI development project
+Finnish-English Translator
 
+A simple translation web app built with Flask that translates text from English to Finnish using a pre-trained NLP model.
 
-## Initial task:
-You should submit a small coding assignment in which your task is to create a small app using Flask (https://flask.palletsprojects.com/en/2.3.x/quickstart/)
-The app should have a text field and a button. When the button is pressed, the text written in the text field will be sent to the backend, which will translate it from English to Finnish, for example, using this model: https://huggingface.co/Helsinki-NLP/opus-mt-en-fi. 
-Click “Use in Transformers” to see how to load the model and refer to Pipeline documentation to use the model to translate text (https://huggingface.co/docs/transformers/main_classes/pipelines). NB. There is also a Pipeline for translation. 
+Overview
 
-## My external features: 
+This project demonstrates a minimal Flask-based web application that allows users to translate English text into Finnish using Hugging Face’s Helsinki-NLP/opus-mt-en-fi translation model.
 
-web page design, 
-loading spinner,
-dark mode,
-recent translations area,
-adaptive appearance and layout for mobile devices
+The app features a clean, responsive user interface and integrates a natural language processing pipeline for real-time translation.
+
+Features
+
+🌍 English-to-Finnish translation powered by Hugging Face Transformers
+🎨 Modern web UI with dark mode
+⏳ Loading spinner to indicate processing status
+🕓 Recent translations display
+📱 Mobile-friendly layout with adaptive styling
+Technologies Used
+
+Flask — for backend routing and serving
+Transformers Pipeline — for translation inference
+HTML, CSS, and JavaScript — for the frontend design and interactions
+Getting Started
+
+Clone the repo
+Install the required Python packages
+Run the Flask server
+Access the app in your browser and try out the translation
+
   
